@@ -1,0 +1,8 @@
+
+
+
+#Copy files into buckets
+gsutil cp db_prd_cj_base_al_cfm_ergebnisdaten_mt.csv  gs://test-import-mock/mysqldump-1/
+
+#Load data from bucket into BQ
+bq load --autodetect --source_format=CSV second_dataset.sql_dump_table gs://test-import-mock/mysqldump-1/db_prd_cj_base_al_cfm_ergebnisdaten_mt.csv

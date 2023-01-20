@@ -19,8 +19,8 @@ from pyspark.sql.functions import row_number
 from pyspark.sql.types import IntegerType
 
 # from impala_shell_connector import ImpalaShell
-from de.telekom.bdmp.rai.transformation.cfm_selection.sel_script_etl_localdev import ASelScriptEtl
-from de.telekom.bdmp.rai.transformation.cfm_selection.cfg.config_4100 import config
+from gcp_training.spark.utils.sel_script_etl_localdev import ASelScriptEtl
+from gcp_training.spark.utils.sel_script_etl_localdev.cfg.config_4100 import config
 
 logger = logging.getLogger(__name__)
 
